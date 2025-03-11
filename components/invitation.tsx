@@ -146,7 +146,6 @@ export function Invitation() {
               </div>
               
               <div style="text-align: center; margin-top: 30px; font-size: 12px; color: #a5b4fc;">
-                This invitation is non-transferable and must be presented at the venue entrance.
               </div>
             </div>
           </body>
