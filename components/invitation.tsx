@@ -45,7 +45,23 @@ export function Invitation() {
 
       // Simulate checking process
       setTimeout(() => {
-        const invited = INVITED_GUESTS.some((guest) => guest.toLowerCase() === name.trim().toLowerCase())
+        // Split input name into parts and sort them
+        const normalizedInputName = name.trim()
+          .toLowerCase()
+          .split(/\s+/)
+          .sort()
+          .join(' ');
+
+        // Check if any guest name matches when normalized the same way
+        const invited = INVITED_GUESTS.some(guest => {
+          const normalizedGuestName = guest
+            .toLowerCase()
+            .split(/\s+/)
+            .sort()
+            .join(' ');
+          return normalizedGuestName === normalizedInputName;
+        });
+
         setIsInvited(invited)
         setStage("result")
         setIsAnimating(false)
@@ -299,6 +315,12 @@ export function Invitation() {
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="font-semibold">Venue:</span> 4027 Nyar utca 21 🔔12
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="font-semibold">Dressing 👩:</span> Long Gown Strictly
+                    </li>
+                    <li className="flex items-center gap-2">
+                      <span className="font-semibold">Dressing 👨:</span> Dress Modestly 
                     </li>
                     <li className="flex items-center gap-2">
                       <span className="font-semibold">Note:</span> Please Arrive On Time 🫵
