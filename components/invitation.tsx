@@ -24,6 +24,7 @@ const INVITED_GUESTS = [
   "Diana Vasileva",
   "Sunil Sona",
   "Ten Jia Wan",
+  "Michael Adewuyi",
 ]
 
 export function Invitation() {
