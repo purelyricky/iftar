@@ -360,4 +360,3 @@ export function Invitation() {
     </AnimatePresence>
   )
 }
-
