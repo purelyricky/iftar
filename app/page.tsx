@@ -1,4 +1,5 @@
 import { Invitation } from "@/components/invitation"
+import { ContactCards } from "@/components/contact-cards"
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-black/40 backdrop-blur-[0.5px]" />
       <div className="relative z-10 w-full">
         <Invitation />
+        <ContactCards />
       </div>
     </main>
   )
