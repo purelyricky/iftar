@@ -26,6 +26,8 @@ const INVITED_GUESTS = [
   "Ten Jia Wan",
   "Michael Adewuyi",
   "Chukwudi Ojelubechukwu Chioma",
+  "Allan Nyaanga",
+  "Teresa Bochaberi",
 
 ]
 
