@@ -25,6 +25,8 @@ const INVITED_GUESTS = [
   "Sunil Sona",
   "Ten Jia Wan",
   "Michael Adewuyi",
+  "Chukwudi Ojelubechukwu Chioma",
+
 ]
 
 export function Invitation() {
